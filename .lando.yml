@@ -1,0 +1,4 @@
+name: debug
+recipe: lamp
+config:
+  webroot: .
