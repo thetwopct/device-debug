@@ -25,3 +25,11 @@ PHP 7+
 ## Ideas/Feedback
 
 Improvements, feedback, pull requests are welcome.
+
+## Changelog
+
+20210919
+Updated jQuery, added preconnects
+
+20210918
+Made open source

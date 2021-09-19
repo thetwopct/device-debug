@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<link rel="preconnect" href="//cdnjs.cloudflare.com" crossorigin="anonymous">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
 	<meta name="twitter:image:alt" content="Never ask - What device are you using? - EVER again">
 
 	<link rel='stylesheet' href='styles.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css' type='text/css' media='all' crossorigin="anonymous" />
 </head>
 
 <body>
@@ -52,8 +53,7 @@
 			}
 
 			if ($user_os) {
-				echo '<li><strong>Operating System: </strong>
-	' . $user_os . '</li>';
+				echo '<li><strong>Operating System: </strong>' . $user_os . '</li>';
 			}
 
 			echo '<li><strong>Raw Browser Info: ' . $user_agent . '</strong></li>';
@@ -68,12 +68,12 @@
 	</div>
 
 	<div class="fixed-footer">
-		<a href="https://www.thetwopercent.co.uk" target="_blank">Made by The Two Percent</a>&nbsp;-&nbsp;<a href="https://www.github.com/thetwopct" target="_blank">Github</a>
+		<a href="https://www.thetwopercent.co.uk" rel="noopener" target="_blank">Made by The Two Percent</a>&nbsp;-&nbsp;<a href="https://github.com/thetwopct/device-debug" rel="noopener" target="_blank">Find this on Github</a>
 	</div>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 <script src="browser.js"></script>
-<script defer src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" crossorigin="anonymous"></script>
 
 </html>
